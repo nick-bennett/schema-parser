@@ -1,4 +1,34 @@
-# Project exclude paths
+# IntelliJ/Android Studio
+# - metadata
+/.idea/
+*.iml
+# - temporary files
+/captures/
+# - build output
+/out/
+
+# Eclipse
+# - metadata
+/.settings/
+.project
+.classpath
+# - build output
+/bin/
+
+# Gradle
+# - temporary files
 /.gradle/
+# - local properties
+local.properties
+# - build output
 /build/
-/build/classes/java/main/
+
+# Maven build output
+/target/
+
+# Floobits metadata
+.floo
+.flooignore
+
+# OS X metadata
+.DS_Store
