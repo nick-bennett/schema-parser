@@ -7,7 +7,7 @@ public class Main {
 
   public static void main(String[] args) throws IOException {
     SchemaRepository repository = new SchemaRepository(System.in);
-    System.out.println("Read schema from standard in");
+    System.out.println(repository.getSchema().getDatabase().getEntities().get(0).getSqlStatement());
   }
 
 }
