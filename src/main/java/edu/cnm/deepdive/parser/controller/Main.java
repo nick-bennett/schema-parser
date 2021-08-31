@@ -2,7 +2,6 @@ package edu.cnm.deepdive.parser.controller;
 
 import edu.cnm.deepdive.parser.service.SchemaRepository;
 import java.io.IOException;
-import java.io.InputStream;
 
 public class Main {
 

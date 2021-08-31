@@ -33,14 +33,16 @@ test {
 jar {
     manifest {
         attributes(
-                'Main-Class' : 'edu.cnm.deepdive.parser.controller.Main'
+                'Main-Class': 'edu.cnm.deepdive.parser.controller.Main'
         )
     }
     from {
-        configurations.runtimeClasspath.filter {
-            it.exists()
-        }.collect {
-            it.isDirectory() ? it : zipTree(it)
-        }
+        configurations.runtimeClasspath
+                .filter {
+                    it.exists()
+                }
+                .collect {
+                    it.isDirectory() ? it : zipTree(it)
+                }
     }
 }
